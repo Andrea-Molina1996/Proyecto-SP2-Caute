@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    style="?android:buttonBarStyle"
+    android:fitsSystemWindows="true"
+    tools:context="com.molina.andrea.myapplication.SignUpOrSignIn">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        app:srcCompat="@drawable/ic_warning_white_24px" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:text="Registrarse"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/signInButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:outlineProvider="background"
+        android:text="CAUTE"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.molina.andrea.myapplication.MainMapFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mainMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            tools:context="com.molina.andrea.myapplication.MapsActivity" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabGetDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            app:backgroundTint="@color/colorBlue"
+            app:srcCompat="@drawable/ic_navigation_white_24px" />
+
+        <EditText
+            android:id="@+id/editTextPlace"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:hint="Buscar..."
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorBlack" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSearchPlace"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/editTextPlace"
+            android:layout_toRightOf="@+id/editTextPlace"
+            android:background="@color/colorBlue"
+            app:srcCompat="@drawable/ic_search_white_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHospital"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/editTextPlace"
+            android:layout_alignStart="@+id/editTextPlace"
+            android:layout_below="@+id/editTextPlace"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_hospital_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGas"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonHospital"
+            android:layout_toRightOf="@+id/imageButtonHospital"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_gas_station_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDinner"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonGas"
+            android:layout_toRightOf="@+id/imageButtonGas"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_dining_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGrocery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonDinner"
+            android:layout_toRightOf="@+id/imageButtonDinner"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_grocery_store_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonGrocery"
+            android:layout_toRightOf="@+id/imageButtonGrocery"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_mall_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMovie"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonMall"
+            android:layout_toRightOf="@+id/imageButtonMall"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_movies_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonConvenienceStore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editTextPlace"
+            android:layout_toEndOf="@+id/imageButtonMovie"
+            android:layout_toRightOf="@+id/imageButtonMovie"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_convenience_store_black_24px" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCaffe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageButtonSearchPlace"
+            android:layout_toEndOf="@+id/imageButtonConvenienceStore"
+            android:layout_toRightOf="@+id/imageButtonConvenienceStore"
+            android:background="@color/colorBlue"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_local_cafe_black_24px" />
+
+    </RelativeLayout>
+
+</FrameLayout>

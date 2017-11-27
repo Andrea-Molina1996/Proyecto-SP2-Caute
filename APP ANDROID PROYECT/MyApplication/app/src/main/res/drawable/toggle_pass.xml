@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/ic_visibility_white_18px"/>
+    <item android:state_pressed="true" android:drawable="@drawable/ic_visibility_white_18px"/>
+    <item android:state_checked="true" android:drawable="@drawable/ic_visibility_white_18px"/>
+    <item android:drawable="@drawable/ic_visibility_off_white_18px"/>
+</selector>

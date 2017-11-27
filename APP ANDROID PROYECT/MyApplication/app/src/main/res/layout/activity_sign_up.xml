@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.molina.andrea.myapplication.SignUpActivity">
+
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:text="@string/registrarse" />
+
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_alignLeft="@+id/buttonSignUp"
+        android:layout_alignStart="@+id/buttonSignUp"
+        android:layout_alignTop="@+id/buttonSignUp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/google" />
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGoogle"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ya_tienes_cuenta_inicia_sesi_n" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/buttonGoogle"
+        android:layout_alignLeft="@+id/buttonSignUp"
+        android:layout_alignStart="@+id/buttonSignUp"
+        android:id="@+id/textInputLayoutConfPasswrod">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextConfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirmar_contrase_a"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/toggle_pass"
+        app:passwordToggleTint="@color/colorAccent"
+        android:layout_above="@+id/textInputLayoutConfPasswrod"
+        android:layout_alignLeft="@+id/textInputLayoutConfPasswrod"
+        android:layout_alignStart="@+id/textInputLayoutConfPasswrod"
+        android:id="@+id/textInputLayoutPassword">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contrase_a"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textInputLayoutPassword"
+        android:layout_alignLeft="@+id/textInputLayoutPassword"
+        android:layout_alignStart="@+id/textInputLayoutPassword"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_electronico"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.molina.andrea.myapplication.EditProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/textNombre"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="@string/nombre_s"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/textApellido"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="@string/apellido_s"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/textUsername"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textApellido"
+            android:layout_alignStart="@+id/textApellido"
+            android:layout_below="@+id/textApellido"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="@string/nombre_de_usuario"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonDatePicker"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textUsername"
+            android:layout_alignStart="@+id/textUsername"
+            android:layout_below="@+id/textUsername"
+            android:layout_marginTop="20dp"
+            android:text="@string/fecha" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textUsername"
+            android:layout_alignRight="@+id/textUsername"
+            android:layout_alignTop="@+id/buttonDatePicker"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@+id/buttonDatePicker"
+            android:ems="10"
+            android:hint="@string/fecha"
+            android:inputType="date"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/textPhoneNumber"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDatePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="@string/numero_de_telefono"
+            android:inputType="phone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textPhoneNumber"
+            android:layout_alignLeft="@+id/textPhoneNumber"
+            android:layout_alignStart="@+id/textPhoneNumber"
+            android:layout_marginTop="17dp"
+            android:layout_alignRight="@+id/textPhoneNumber"
+            android:layout_alignEnd="@+id/textPhoneNumber">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mujer"
+                android:buttonTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentTop="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:buttonTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/radioButton"
+                android:layout_toRightOf="@+id/radioButton"
+                android:text="@string/hombre"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupGender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:text="Siguiente" />
+    </RelativeLayout>
+
+</FrameLayout>

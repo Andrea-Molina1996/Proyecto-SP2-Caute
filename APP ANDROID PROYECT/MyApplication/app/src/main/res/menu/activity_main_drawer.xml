@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_navigation"
+            android:icon="@drawable/ic_navigation_black_24px"
+            android:iconTint="@color/colorAccent"
+            android:title="@string/navegaci_n" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:iconTint="@color/colorAccent"
+            android:title="Galeria" />
+        <item
+            android:id="@+id/nav_assistent"
+            android:icon="@drawable/ic_chat_black_24px"
+            android:iconTint="@color/colorAccent"
+            android:title="Asistente" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_insert_chart_black_24px"
+            android:iconTint="@color/colorAccent"
+            android:title="Estadisticas" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/ic_warning_black_24px"
+            android:iconTint="@color/colorAccent"
+            android:title="Alertas"/>
+    </group>
+
+    <item android:title="Configuración" android:iconTint="@color/colorWhite">
+        <menu>
+            <item
+                android:id="@+id/nav_edit_profile"
+                android:icon="@drawable/ic_mode_edit_black_24px"
+                android:iconTint="@color/colorAccent"
+                android:title="Editar perfil" />
+            <item
+                android:id="@+id/nav_bluethood"
+                android:icon="@drawable/ic_settings_bluetooth_black_24px"
+                android:iconTint="@color/colorAccent"
+                android:title="Bluethood" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24px"
+                android:iconTint="@color/colorAccent"
+                android:title="Ajustes" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_power_settings_new_black_24px"
+                android:iconTint="@color/colorAccent"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item>
+
+</menu>

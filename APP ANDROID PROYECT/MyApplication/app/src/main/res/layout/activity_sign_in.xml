@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.molina.andrea.myapplication.SignInActivity">
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/iniciar_sesion"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/signInButtonGoogle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/signInButton"
+        android:layout_alignStart="@+id/signInButton"
+        android:layout_below="@+id/signInButton"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorAccent"
+        android:text="@string/google"
+        android:textColor="@color/colorWhite" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEmail"
+        app:errorEnabled="true"
+        android:layout_alignLeft="@+id/signInButton"
+        android:layout_alignStart="@+id/signInButton"
+        android:layout_marginTop="100dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electronico"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_below="@+id/editTextEmail"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/toggle_pass"
+        app:passwordToggleTint="@color/colorAccent"
+        android:layout_marginTop="11dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/signInButtonGoogle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="@string/no_tienes_cuenta_registrate"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:text="@string/olvidaste_tu_contrase_a" />
+
+</RelativeLayout>

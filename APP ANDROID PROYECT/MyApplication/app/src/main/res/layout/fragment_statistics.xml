@@ -1,0 +1,182 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.molina.andrea.myapplication.StatisticsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/relativeLayout">
+
+            <Spinner
+                android:id="@+id/spinnerTypeOfChart"
+                android:layout_width="185dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:popupBackground="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorWhite"
+                android:spinnerMode="dropdown" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDate"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/spinnerTypeOfChart"
+                android:layout_toEndOf="@+id/radioGroupRangeTime"
+                android:layout_toRightOf="@+id/radioGroupRangeTime"
+                android:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_today_white_48px" />
+
+            <EditText
+                android:id="@+id/textViewDate"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/imageButtonDate"
+                android:layout_toEndOf="@+id/imageButtonDate"
+                android:layout_toRightOf="@+id/imageButtonDate"
+                android:gravity="center"
+                android:text="Fecha"
+                android:textColor="@color/colorLGrey"
+                android:backgroundTint="@color/colorLGrey"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buttonGenerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textViewDate"
+                android:layout_alignRight="@+id/textViewDate"
+                android:layout_below="@+id/textViewDate"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Generar"
+                android:textColor="@color/colorWhite" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupRangeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/spinnerTypeOfChart"
+                android:layout_alignStart="@+id/spinnerTypeOfChart"
+                android:layout_alignTop="@+id/buttonGenerate">
+
+                <RadioButton
+                    android:id="@+id/radioButtonDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Día" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Semana" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Mes" />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCharts"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/relativeLayout"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAnalisys"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/relativeLayoutCharts"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Analisis:"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textViewAnalisys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:textColor="@color/colorWhite"
+                android:text="No hay datos que analizar..." />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="5dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/relativeLayoutAnalisys">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textViewS"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:text="Punteo: "/>
+                <TextView
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@+id/textViewS"
+                    android:id="@+id/textViewScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

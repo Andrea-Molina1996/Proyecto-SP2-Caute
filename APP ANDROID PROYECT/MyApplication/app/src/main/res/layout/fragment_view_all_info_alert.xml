@@ -1,0 +1,300 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.molina.andrea.myapplication.ViewAllInfoAlert">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/textViewFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="29dp"
+                android:text="Fecha"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextFecha"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewFecha"
+                android:layout_alignBottom="@+id/textViewFecha"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="date"
+                android:text="Fecha" />
+
+            <EditText
+                android:id="@+id/editTextHora"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextFecha"
+                android:layout_alignStart="@+id/editTextFecha"
+                android:layout_below="@+id/editTextFecha"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="time"
+                android:text="Hora" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextHora"
+                android:layout_alignBottom="@+id/editTextHora"
+                android:layout_alignLeft="@+id/textViewFecha"
+                android:layout_alignStart="@+id/textViewFecha"
+                android:text="Hora"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextVelocidad"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextHora"
+                android:layout_alignRight="@+id/editTextHora"
+                android:layout_below="@+id/editTextHora"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="Velocidad" />
+
+            <TextView
+                android:id="@+id/textViewVelocidad"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextVelocidad"
+                android:layout_alignBottom="@+id/editTextVelocidad"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:text="Velocidad"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextLimite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextVelocidad"
+                android:layout_alignStart="@+id/editTextVelocidad"
+                android:layout_below="@+id/editTextVelocidad"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Rango" />
+
+            <TextView
+                android:id="@+id/textViewLimite"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextLimite"
+                android:layout_alignBottom="@+id/editTextLimite"
+                android:layout_alignLeft="@+id/textViewVelocidad"
+                android:layout_alignStart="@+id/textViewVelocidad"
+                android:text="Rango"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextDistancia"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextLimite"
+                android:layout_alignStart="@+id/editTextLimite"
+                android:layout_below="@+id/editTextLimite"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="Distancia" />
+
+            <TextView
+                android:id="@+id/textViewDistancia"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextDistancia"
+                android:layout_alignBottom="@+id/editTextDistancia"
+                android:layout_alignLeft="@+id/textViewLimite"
+                android:layout_alignStart="@+id/textViewLimite"
+                android:text="Distancia "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextDistancia"
+                android:layout_alignStart="@+id/editTextDistancia"
+                android:layout_below="@+id/editTextDistancia"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Dirección" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextAddress"
+                android:layout_alignBottom="@+id/editTextAddress"
+                android:layout_alignLeft="@+id/textViewDistancia"
+                android:layout_alignStart="@+id/textViewDistancia"
+                android:text="Dirección"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextObject"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextAddress"
+                android:layout_alignStart="@+id/editTextAddress"
+                android:layout_below="@+id/editTextAddress"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Objeto(s)" />
+
+            <TextView
+                android:id="@+id/textViewObject"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextObject"
+                android:layout_alignBottom="@+id/editTextObject"
+                android:layout_alignLeft="@+id/textViewAddress"
+                android:layout_alignStart="@+id/textViewAddress"
+                android:text="Objeto(s)"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editTextSeriousness"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextObject"
+                android:layout_alignStart="@+id/editTextObject"
+                android:layout_below="@+id/editTextObject"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:text="Ubicación" />
+
+            <TextView
+                android:id="@+id/textViewSeriousness"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextSeriousness"
+                android:layout_alignBottom="@+id/editTextSeriousness"
+                android:layout_alignLeft="@+id/textViewObject"
+                android:layout_alignStart="@+id/textViewObject"
+                android:text="Ubicación"
+                android:textSize="20dp" />
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/mainMapLocation"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/textViewSeriousness"
+                android:layout_alignStart="@+id/textViewSeriousness"
+                android:layout_below="@+id/editTextSeriousness"
+                android:layout_marginTop="19dp"
+                tools:context="com.molina.andrea.myapplication.MapsActivity"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/buttonAddInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextSeriousness"
+                android:layout_alignRight="@+id/editTextSeriousness"
+                android:layout_alignTop="@+id/mainMapLocation"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorWhite"
+                android:text="Agregar" />
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/buttonAddInfo"
+                android:layout_alignStart="@+id/buttonAddInfo"
+                android:layout_below="@+id/buttonAddInfo"
+                android:backgroundTint="@color/colorRedGoogle"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="11dp"
+                android:text="Cancelar" />
+
+            <ImageView
+                android:id="@+id/imageViewAlertImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mainMapLocation"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

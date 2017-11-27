@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.molina.andrea.myapplication.ProfileActivity">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/imageViewProfilePicture"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="28dp"
+               app:srcCompat="@drawable/ic_account_circle_white_24px" />
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/textInputLayoutName"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imageViewProfilePicture"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:backgroundTint="@color/colorWhite"
+               android:textColorHint="@color/colorWhite"
+               app:errorEnabled="true">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorWhite"
+                   android:hint="@string/nombre_s"
+                   android:paddingLeft="10dp"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/textInputLayoutLastName"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textInputLayoutName"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:backgroundTint="@color/colorWhite"
+               android:textColorHint="@color/colorWhite"
+               app:errorEnabled="true">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorWhite"
+                   android:hint="@string/apellido_s"
+                   android:inputType="textPersonName"
+                   android:paddingLeft="10dp"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/textInputLayoutUserName"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textInputLayoutLastName"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:backgroundTint="@color/colorWhite"
+               android:textColorHint="@color/colorWhite"
+               app:errorEnabled="true">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorWhite"
+                   android:hint="@string/nombre_de_usuario"
+                   android:inputType="text"
+                   android:paddingLeft="10dp"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/textInputLayoutPhoneNumber"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textInputLayoutUserName"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:backgroundTint="@color/colorWhite"
+               android:textColorHint="@color/colorWhite"
+               app:errorEnabled="true">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorWhite"
+                   android:hint="@string/numero_de_telefono"
+                   android:inputType="phone"
+                   android:paddingLeft="10dp"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp" />
+           </android.support.design.widget.TextInputLayout>
+
+           <Button
+               android:id="@+id/buttonDatePicker"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:textColor="@color/colorWhite"
+               android:layout_alignLeft="@+id/textInputLayoutPhoneNumber"
+               android:layout_alignStart="@+id/textInputLayoutPhoneNumber"
+               android:layout_below="@+id/textInputLayoutPhoneNumber"
+               android:layout_marginLeft="12dp"
+               android:layout_marginStart="12dp"
+               android:layout_marginTop="15dp"
+               android:textSize="15dp"
+               android:background="@color/colorAccent"
+               android:text="Fecha" />
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/textInputLayoutDate"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_alignTop="@+id/buttonDatePicker"
+               android:layout_marginLeft="24dp"
+               android:layout_marginStart="24dp"
+               android:backgroundTint="@color/colorWhite"
+               android:textColorHint="@color/colorWhite"
+               app:errorEnabled="true"
+               android:layout_toEndOf="@+id/buttonDatePicker"
+               android:layout_toRightOf="@+id/buttonDatePicker">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="@color/colorWhite"
+                   android:gravity="center"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp"
+                   android:hint="Fecha de Nacimiento" />
+           </android.support.design.widget.TextInputLayout>
+
+           <RadioGroup
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/radioGroupGender"
+               android:layout_alignLeft="@+id/buttonDatePicker"
+               android:layout_alignStart="@+id/buttonDatePicker"
+               android:layout_below="@+id/buttonDatePicker"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15dp"
+                   android:id="@+id/radioButtonF"
+                   android:text="@string/mujer"
+                   android:layout_marginRight="25dp"
+                   android:buttonTint="@color/colorWhite"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"/>
+
+               <RadioButton
+                   android:buttonTint="@color/colorWhite"
+                   android:id="@+id/radioButtonM"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/hombre"
+                   android:textColor="@color/colorWhite"
+                   android:textColorHint="@color/colorWhite"
+                   android:textSize="15dp" />
+
+           </RadioGroup>
+
+           <ProgressBar
+               android:id="@+id/progressBar"
+               style="?android:attr/progressBarStyleHorizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"/>
+
+           <CheckBox
+               android:id="@+id/checkBoxVerified"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/radioGroupGender"
+               android:layout_alignStart="@+id/radioGroupGender"
+               android:layout_below="@+id/radioGroupGender"
+               android:layout_marginTop="55dp"
+               android:buttonTint="@color/colorWhite"
+               android:textSize="15dp"
+               android:clickable="false"
+               android:textColorHint="@color/colorWhite"
+               android:textColor="@color/colorWhite"
+               android:text="Verificación de cuenta" />
+
+           <Button
+               android:id="@+id/buttonSave"
+               android:layout_width="300dp"
+               android:textSize="15dp"
+               android:layout_marginBottom="25dp"
+               android:textColor="@color/colorWhite"
+               android:gravity="center"
+               android:background="@color/colorAccent"
+               android:layout_height="40dp"
+               android:layout_below="@+id/checkBoxVerified"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:text="Siguiente" />
+
+
+
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

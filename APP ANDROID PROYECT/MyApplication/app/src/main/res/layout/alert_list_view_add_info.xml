@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Fecha"
+        android:textColor="@color/colorWhite"
+        android:drawableTint="@color/colorYellow"
+        android:drawableLeft="@drawable/ic_warning_black_24px"
+        android:drawablePadding="5dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/textViewDate"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Hora"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textViewTime"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Rango"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textViewSeriousness"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Objeto"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textViewObject"/>
+</LinearLayout>

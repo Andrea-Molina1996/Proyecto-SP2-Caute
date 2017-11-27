@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/textViewAlertID"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewLevel"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewNotified"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewDate"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewSide"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewTime"/>
+
+    <!--<TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:autoLink="all"
+        android:id="@+id/textViewUrlImg"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="TextView"
+        android:id="@+id/textViewZone"/> -->
+
+</LinearLayout>
